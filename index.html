@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entsha Logistics | Johnson Vervoer - Logistics & Warehouse Maintenance Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-dark: #1a365d;
+            --primary-blue: #2d5aa7;
+            --accent-orange: #e67e22;
+            --light-gray: #f8f9fa;
+            --dark-gray: #333;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+        }
+        
+        .brand-main {
+            color: var(--primary-dark);
+            font-size: 1.5rem;
+        }
+        
+        .brand-sub {
+            color: var(--primary-blue);
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 100%);
+            color: white;
+            padding: 100px 0;
+        }
+        
+        .service-card {
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+        
+        .bbee-badge {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background-color: var(--primary-blue);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -36px;
+            top: 5px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: var(--primary-blue);
+        }
+        
+        .footer {
+            background-color: var(--primary-dark);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-blue);
+            border-color: var(--primary-blue);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            border-color: var(--primary-dark);
+        }
+        
+        .highlight {
+            color: var(--primary-blue);
+        }
+        
+        .cta-section {
+            background-color: var(--light-gray);
+            padding: 60px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="brand-main">ENTSHA LOGISTICS</span>
+                <br>
+                <span class="brand-sub">JOHNSON VERVOER</span>
+            </a>
+            <span class="bbee-badge">B-BBEE LEVEL 4 CONTRIBUTOR</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#history">Our History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Logistics Excellence Since 1988</h1>
+                    <p class="lead mb-4">Specializing in fresh produce transportation, warehousing, and maintenance services across South Africa. Trusted by the industry for over three decades.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#contact" class="btn btn-light btn-lg">Get a Quote</a>
+                        <a href="#services" class="btn btn-outline-light btn-lg">Our Services</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <i class="bi bi-truck display-1 opacity-75"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">About <span class="highlight">Entsha Logistics</span></h2>
+                    <p class="lead">For over three decades, Entsha Logistics has been the backbone of South Africa's fresh produce supply chain.</p>
+                    <p>Established in 1988, we've built our reputation on reliability, expertise, and deep understanding of the unique requirements of perishable goods transportation.</p>
+                    <p>Our subsidiary, <strong>Johnson Vervoer</strong>, extends our capabilities with specialized warehousing services and comprehensive maintenance solutions.</p>
+                    <div class="mt-4">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+                            <span>B-BBEE Level 4 Contributor</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+                            <span>Specialized in fresh produce since 1988</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+                            <span>Nationwide coverage across South Africa</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow">
+                        <div class="card-body p-4">
+                            <h4 class="card-title">Why Choose Entsha Logistics?</h4>
+                            <div class="timeline mt-4">
+                                <div class="timeline-item">
+                                    <h5>Industry Expertise</h5>
+                                    <p>Deep understanding of temperature control, handling protocols, and timing requirements for perishable goods.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <h5>Reliable Fleet</h5>
+                                    <p>Modern, well-maintained vehicles equipped for the specific needs of fresh produce transportation.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <h5>Compliance Focus</h5>
+                                    <p>Full compliance with industry regulations and B-BBEE requirements as a Level 4 Contributor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Our <span class="highlight">Services</span></h2>
+                <p class="lead">Comprehensive logistics solutions tailored to your business needs</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card service-card shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-truck service-icon"></i>
+                            <h4 class="card-title">Transport & Logistics</h4>
+                            <p class="card-text">Specialized transportation solutions for fresh produce and perishable goods with temperature-controlled vehicles and optimized routing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-building service-icon"></i>
+                            <h4 class="card-title">Warehousing</h4>
+                            <p class="card-text">Secure, temperature-controlled storage facilities managed by Johnson Vervoer with inventory management and distribution services.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-tools service-icon"></i>
+                            <h4 class="card-title">Maintenance</h4>
+                            <p class="card-text">Comprehensive fleet maintenance and repair services to ensure reliability and minimize downtime for your operations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Our <span class="highlight">Journey</span> Since 1988</h2>
+                <p class="lead">Three decades of excellence in South African logistics</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card border-0 shadow">
+                        <div class="card-body p-4">
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <h5>1988 - Foundation</h5>
+                                    <p>Entsha Logistics was established with a focus on fresh produce transportation, recognizing the unique needs of this vital industry.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <h5>1995 - Expansion</h5>
+                                    <p>Expanded our fleet and services to cover more regions across South Africa, building a reputation for reliability.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <h5>2005 - Johnson Vervoer</h5>
+                                    <p>Launched our subsidiary Johnson Vervoer to provide specialized warehousing and maintenance services.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <h5>2015 - B-BBEE Recognition</h5>
+                                    <p>Achieved B-BBEE Level 4 Contributor status, demonstrating our commitment to economic transformation.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <h5>2023 - Digital Transformation</h5>
+                                    <p>Embarking on our digital journey to serve clients better in the modern era while maintaining our traditional values of reliability and excellence.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h3>Ready to Streamline Your Supply Chain?</h3>
+                    <p class="mb-0">Contact us today for a customized logistics solution that meets your specific needs.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="#contact" class="btn btn-primary btn-lg">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Contact <span class="highlight">Us</span></h2>
+                <p class="lead">Get in touch with our team for logistics solutions</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card border-0 shadow">
+                        <div class="card-body p-4">
+                            <form id="contactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="company" class="form-label">Company</label>
+                                        <input type="text" class="form-control" id="company" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone</label>
+                                        <input type="tel" class="form-control" id="phone">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="service" class="form-label">Service Interested In</label>
+                                        <select class="form-select" id="service">
+                                            <option value="transport">Transport & Logistics</option>
+                                            <option value="warehousing">Warehousing</option>
+                                            <option value="maintenance">Maintenance</option>
+                                            <option value="multiple">Multiple Services</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="mt-5 pt-4 border-top">
+                                <div class="row text-center">
+                                    <div class="col-md-4">
+                                        <i class="bi bi-telephone-fill text-primary fs-4"></i>
+                                        <h5 class="mt-2">Phone</h5>
+                                        <p>+27 XX XXX XXXX</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <i class="bi bi-envelope-fill text-primary fs-4"></i>
+                                        <h5 class="mt-2">Email</h5>
+                                        <p>info@entshalogistics.co.za</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <i class="bi bi-whatsapp text-primary fs-4"></i>
+                                        <h5 class="mt-2">WhatsApp</h5>
+                                        <p>+27 XX XXX XXXX</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h4>Entsha Logistics</h4>
+                    <p>Johnson Vervoer</p>
+                    <p>Providing exceptional logistics solutions since 1988. Specialists in fresh produce transportation, warehousing, and maintenance.</p>
+                    <div class="bbee-badge d-inline-block">B-BBEE LEVEL 4 CONTRIBUTOR</div>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="#about" class="text-light text-decoration-none">About</a></li>
+                        <li><a href="#services" class="text-light text-decoration-none">Services</a></li>
+                        <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#services" class="text-light text-decoration-none">Transport & Logistics</a></li>
+                        <li><a href="#services" class="text-light text-decoration-none">Warehousing</a></li>
+                        <li><a href="#services" class="text-light text-decoration-none">Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5>Connect With Us</h5>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="text-light"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-linkedin fs-5"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-whatsapp fs-5"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-4 border-top">
+                <p>&copy; 2025 Entsha Logistics | Johnson Vervoer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Simple form handling for demonstration
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will contact you soon.');
+            this.reset();
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
